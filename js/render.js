@@ -156,9 +156,26 @@ function renderFoot() {
     "金渐成投资框架 · 做T回撤锚定版 V2 · " + REPORT.meta.titleShort;
 }
 
+/* ---------- 渲染：友情链接 ---------- */
+function renderCrossLinks() {
+  var SITES = [
+    { href: "https://fengzt13.github.io/nasdaq100-dashboard/", label: "纳指看板", key: "nasdaq" },
+    { href: "https://fengzt13.github.io/ai-dashboard/", label: "AI看板", key: "ai" },
+    { href: "https://fengzt13.github.io/metal-dashboard/", label: "金铜看板", key: "metal" },
+    { href: "https://fengzt13.github.io/hbm-dashboard/", label: "HBM看板", key: "hbm" },
+    { href: "https://fengzt13.github.io/hb/", label: "老雷观点", key: "laolei" }
+  ];
+  // 排除自己（金渐成日报站）
+  var html = '<span class="cross-links-label">友情链接</span>' + SITES.map(function (s) {
+    return '<a class="cross-link" href="' + s.href + '" target="_blank" rel="noopener">' + s.label + "</a>";
+  }).join("");
+  el("crossLinks").innerHTML = html;
+}
+
 /* ---------- 入口 ---------- */
 function renderAll() {
   renderHeader();
+  renderCrossLinks();
   renderOverview();
   renderTrigger();
   renderFocus();

@@ -126,8 +126,19 @@ tbody tr:nth-child(even){background:#FCFBF7;}
 .q .a{font-size:12px;color:var(--gold-l);margin-top:12px;letter-spacing:1px;position:relative;z-index:2;}
 .foot{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:#8A8577;text-align:center;line-height:1.9;}
 .foot b{color:var(--down);}
+/* 友情链接导航 */
+.cross-links{display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
+.cross-links-label{font-size:11px;color:#9BA8BC;white-space:nowrap;margin-right:2px;}
+.cross-link{
+  color:#C9D2E0;text-decoration:none;font-size:11px;font-weight:400;
+  padding:2px 8px;border-radius:9999px;border:1px solid rgba(217,192,138,.3);
+  transition:color .2s,background .2s,border-color .2s;white-space:nowrap;
+}
+.cross-link:hover{color:var(--gold-l);background:rgba(168,132,63,.15);border-color:rgba(217,192,138,.5);}
+
 @media (max-width:900px){
   .idx,.macro,.focus,.risk,.quotes{grid-template-columns:1fr;}
   .macro{grid-template-columns:1fr 1fr;}
   table{font-size:12px;} thead th,tbody td{padding:7px 5px;}
+  .cross-links{justify-content:center;margin-top:10px;}
 }
