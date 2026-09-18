@@ -3,10 +3,10 @@ AIGC:
   ContentProducer: '001191110102MAD55U9H0F10002'
   ContentPropagator: '001191110102MAD55U9H0F10002'
   Label: '1'
-  ProduceID: 'f3a97551-ebd0-4f75-b1b5-f43a61b929f7'
-  PropagateID: 'f3a97551-ebd0-4f75-b1b5-f43a61b929f7'
-  ReservedCode1: '617c850b-1218-4aa5-9f4d-8bfd8a0889cc'
-  ReservedCode2: '617c850b-1218-4aa5-9f4d-8bfd8a0889cc'
+  ProduceID: 'dcb1c454-1232-4583-8eef-243a82fd8faa'
+  PropagateID: 'dcb1c454-1232-4583-8eef-243a82fd8faa'
+  ReservedCode1: 'a8ddfd83-eca8-4633-8458-0cec6e715775'
+  ReservedCode2: 'a8ddfd83-eca8-4633-8458-0cec6e715775'
 ---
 
 # 美股日报 · 金渐成投资框架（做T回撤锚定版 V2）
@@ -15,7 +15,7 @@ AIGC:
 
 ## 在线访问
 
-https://fengzt13.github.io/jinjiancheng-daily/
+https://fengzt13.github.io/jinjiancheng-skill/
 
 ## 项目结构
 
