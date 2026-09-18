@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">美股日报 · 金渐成投资框架</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="hdr">
+  <div class="wrap">
+    <span class="kicker" id="kicker">金渐成投资框架 · 做T回撤锚定版 V2</span>
+    <h1 id="mainTitle">美股日报 · 每日复盘与做T节点</h1>
+    <div class="sub" id="subLine">先保值，再增值 ｜ 要么第一，要么唯一 ｜ 不极端，不单一 ｜ 永不满仓</div>
+    <div class="meta" id="metaLine"></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ============ 一、大盘概况 ============ -->
+<section>
+  <div class="stitle"><div class="no">一</div><h2>大盘概况</h2><span class="en">Market Overview</span></div>
+  <div class="idx" id="idxCards"></div>
+  <div class="macro" id="macroCells"></div>
+  <div class="note" id="narrative"></div>
+</section>
+
+<!-- ============ 二、做T触发监控表 ============ -->
+<section>
+  <div class="stitle"><div class="no">二</div><h2>做T触发监控表</h2><span class="en">Drawdown Trigger Monitor</span></div>
+  <div class="note" id="triggerNote" style="margin-top:0;border-left-color:var(--down);"></div>
+  <table>
+    <thead>
+    <tr>
+      <th class="l">标的</th><th>收盘价</th><th>涨跌</th><th>52周高点</th>
+      <th>当前回撤</th><th>回撤进度</th><th>阈值</th><th>买入触发价</th><th>距触发</th><th>状态</th>
+    </tr>
+    </thead>
+    <tbody id="triggerBody"></tbody>
+  </table>
+</section>
+
+<!-- ============ 三、重点标的动态分析 ============ -->
+<section>
+  <div class="stitle"><div class="no">三</div><h2>重点标的动态分析</h2><span class="en">Key Names · Pyramid Plan</span></div>
+  <div class="note" id="focusNote" style="margin-top:0;"></div>
+  <div class="focus" id="focusGrid"></div>
+</section>
+
+<!-- ============ 四、操作建议汇总 ============ -->
+<section>
+  <div class="stitle"><div class="no">四</div><h2>操作建议汇总</h2><span class="en">Action Summary</span></div>
+  <table>
+    <thead>
+      <tr><th class="l">标的</th><th>现价</th><th>买入触发价</th><th>状态</th><th>第1档仓位</th><th>+30% 首档减仓价</th><th class="l">底仓 / 动作</th></tr>
+    </thead>
+    <tbody id="actionBody"></tbody>
+  </table>
+  <div class="note" id="actionNote"></div>
+</section>
+
+<!-- ============ 五、风控提醒 ============ -->
+<section>
+  <div class="stitle"><div class="no">五</div><h2>风控提醒</h2><span class="en">Risk &amp; Discipline</span></div>
+  <div class="risk" id="riskGrid"></div>
+  <div class="disc" id="discipline"></div>
+</section>
+
+<!-- ============ 六、金渐成投资格言 ============ -->
+<section>
+  <div class="stitle"><div class="no">六</div><h2>金渐成投资格言</h2><span class="en">Wisdom of the Day</span></div>
+  <div class="quotes" id="quoteGrid"></div>
+</section>
+
+<div class="foot" id="footText"></div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
