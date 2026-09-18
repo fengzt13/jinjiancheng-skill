@@ -163,7 +163,7 @@ function renderCrossLinks() {
     { href: "https://fengzt13.github.io/ai-dashboard/", label: "AI看板", key: "ai" },
     { href: "https://fengzt13.github.io/metal-dashboard/", label: "金铜看板", key: "metal" },
     { href: "https://fengzt13.github.io/hbm-dashboard/", label: "HBM看板", key: "hbm" },
-    { href: "https://fengzt13.github.io/hb/", label: "老雷观点", key: "laolei" }
+    { href: "https://fengzt13.github.io/laolei-views/", label: "老雷观点", key: "laolei" }
   ];
   // 排除自己（金渐成日报站）
   var html = '<span class="cross-links-label">友情链接</span>' + SITES.map(function (s) {
