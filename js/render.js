@@ -19,7 +19,7 @@ function barState(dd, thresh) {
 
 /* ---------- 渲染：头部 ---------- */
 function renderHeader() {
-  el("pageTitle").textContent = "美股日报 · 金渐成投资框架 " + REPORT.meta.titleShort;
+  el("pageTitle").textContent = "金渐成投资理念及SKILL· 美股复盘与做T节点日报";
   el("kicker").textContent = "金渐成投资框架 · 做T回撤锚定版 V2";
   el("mainTitle").textContent = "美股日报 · 每日复盘与做T节点";
   el("subLine").textContent = "先保值，再增值 ｜ 要么第一，要么唯一 ｜ 不极端，不单一 ｜ 永不满仓";
